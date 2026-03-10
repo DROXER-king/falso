@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificación de Certificado - SaberesMX</title>
+    <script src="https://cdn.tailwindcss.org"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #4a1024; /* Color guinda del fondo exterior */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .card {
+            background-color: #1a1a1a;
+            width: 100%;
+            max-width: 800px;
+            border-radius: 8px;
+            padding: 40px 60px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+        }
+
+        .header-title {
+            color: #d4af37; /* Dorado */
+            font-size: 1.8rem;
+            font-weight: 600;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .status-badge {
+            background: linear-gradient(to bottom, #2e7d32, #1b5e20);
+            color: white;
+            padding: 8px 45px;
+            border-radius: 50px;
+            font-weight: bold;
+            display: inline-block;
+            margin: 0 auto 30px auto;
+            letter-spacing: 1px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+        }
+
+        .section-title {
+            color: #d4af37;
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-top: 25px;
+            margin-bottom: 10px;
+            border-bottom: 1px solid #333;
+            padding-bottom: 8px;
+        }
+
+        .data-row {
+            display: flex;
+            padding: 12px 0;
+            border-bottom: 1px solid #2a2a2a;
+        }
+
+        .data-label {
+            color: #a0a0a0;
+            width: 35%;
+            font-weight: 600;
+            font-size: 0.95rem;
+        }
+
+        .data-value {
+            color: #e0e0e0;
+            width: 65%;
+            font-size: 0.95rem;
+            text-transform: uppercase;
+        }
+
+        .footer-info {
+            margin-top: 40px;
+            text-align: center;
+            color: #777;
+            font-size: 0.8rem;
+            line-height: 1.5;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 640px) {
+            .card {
+                padding: 25px 20px;
+            }
+            .data-row {
+                flex-direction: column;
+            }
+            .data-label, .data-value {
+                width: 100%;
+            }
+            .data-label {
+                margin-bottom: 4px;
+                font-size: 0.85rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <div class="text-center">
+            <h1 class="header-title">Verificación de Certificado</h1>
+            <div class="status-badge">VÁLIDO</div>
+        </div>
+
+        <!-- Información del Estudiante -->
+        <h2 class="section-title">Información del Estudiante</h2>
+        
+        <div class="data-row">
+            <div class="data-label">Nombre Completo:</div>
+            <div class="data-value" style="color: #ccc;">JOSUE DANIEL LOPEZ MORENO</div>
+        </div>
+        
+        <div class="data-row">
+            <div class="data-label">CURP:</div>
+            <div class="data-value">LOHF050218HCSPRRA1</div>
+        </div>
+
+        <!-- Información del Curso -->
+        <h2 class="section-title">Información del Curso</h2>
+        
+        <div class="data-row">
+            <div class="data-label">Nombre del Curso:</div>
+            <div class="data-value" style="text-transform: none;">SanaMente LibreMente: jóvenes por la paz y contra las adicciones</div>
+        </div>
+        
+        <div class="data-row">
+            <div class="data-label">Duración:</div>
+            <div class="data-value">16 horas</div>
+        </div>
+        
+        <div class="data-row">
+            <div class="data-label">Fecha de Inicio:</div>
+            <div class="data-value">28/02/2026</div>
+        </div>
+        
+        <div class="data-row">
+            <div class="data-label" style="border-bottom: none;">Fecha de Finalización:</div>
+            <div class="data-value" style="border-bottom: none;">06/03/2026</div>
+        </div>
+
+        <div style="border-top: 1px solid #333; margin-top: 20px;"></div>
+
+        <div class="footer-info">
+            Fecha de verificación: 09/03/2026 20:45<br>
+            SaberesMX
+        </div>
+    </div>
+
+</body>
+</html>
